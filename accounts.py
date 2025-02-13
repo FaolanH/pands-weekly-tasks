@@ -16,7 +16,8 @@ account_number [0:5] = 'XXXXXX'
 
 redactded_account_number = '' .join(account_number)
 print (f"For security purpose, your account number has been redacted to only show the last four digit: {redactded_account_number}")
-#[0].format)
+
+#This did not work as intended, printed on a new line each time 
 # print (account_number [1])
 # print (account_number [2])    
 # print (account_number [3])
@@ -26,3 +27,5 @@ print (f"For security purpose, your account number has been redacted to only sho
 # print (account_number [7])
 # print (account_number [8])
 # print (account_number [9])
+
+#For the extra part, this can already handle any number of digits as it is a list, the list range will need to be updated to redact more 
