@@ -8,24 +8,33 @@
 #Extra: Modify the program to deal with account numbers of any length (yes that is a vague requirement, 
 #comment your assumptions)
 
+#Immeditely lists came to mind for this, with the feature to replace positions in the list e.g. 
+#the first 6 numbers to be replaced with X
+#I HAVE STILL NOT FIGURED OUT HOW TO ENSURE LIST IF NUMBERS ONLY/MAX Amount
+#This slack overflow https://stackoverflow.com/questions/1277914/is-there-a-way-to-output-the-numbers-only-from-a-python-list
+#maybe use boolean?
+
+
 #Python lists on Datacaamp
-account_number = list(input("Please input your 10 digit account number: "))
-account_number [0:5] = 'XXXXXX'
+account = list(input("Please input your 10 digit account number: "))
+account [0:5] = 'XXXXXX'
+
+
 #a mix of stack overflow which had converting strings to list led me to co-pilot for the reverse
 #my_list = ['apple', 'banana', 'cherry'] \n result = ', '.join(my_list) \nprint(result)  # Output: apple, banana, cherry
 
-redactded_account_number = '' .join(account_number)
-print (f"For security purpose, your account number has been redacted to only show the last four digit: {redactded_account_number}")
+redactded_account = '' .join(account)
+print (f"For security purpose, your account number has been redacted to only show the last four digit: {redactded_account}")
 
 #This did not work as intended, printed on a new line each time 
-# print (account_number [1])
-# print (account_number [2])    
-# print (account_number [3])
-# print (account_number [4])
-# print (account_number [5])
-# print (account_number [6])
-# print (account_number [7])
-# print (account_number [8])
-# print (account_number [9])
+# print (account [1])
+# print (account [2])    
+# print (account [3])
+# print (account [4])
+# print (account [5])
+# print (account [6])
+# print (account [7])
+# print (account [8])
+# print (account [9])
 
 #For the extra part, this can already handle any number of digits as it is a list, the list range will need to be updated to redact more 
