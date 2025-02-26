@@ -16,15 +16,27 @@
 
 
 #Python lists on Datacaamp
+
 account = list(input("Please input your 10 digit account number: "))
-account [0:5] = 'XXXXXX'
+
+account [0:6] = 'XXXXXX'
 
 
 #a mix of stack overflow which had converting strings to list led me to co-pilot for the reverse
 #my_list = ['apple', 'banana', 'cherry'] \n result = ', '.join(my_list) \nprint(result)  # Output: apple, banana, cherry
 
+
 redactded_account = '' .join(account)
-print (f"For security purpose, your account number has been redacted to only show the last four digit: {redactded_account}")
+
+if isinstance (account, float): 
+    print ("Please only input whole, positive numbers")
+
+#remembered len from lengths, got confirmation from stack overflow (https://stackoverflow.com/questions/8761778/limiting-python-input-strings-to-certain-characters-and-lengths)
+elif len(account) > 10 or len(account) < 10: 
+    print ("Please input your 10 account numbers")
+
+else:
+    print (f"For security purpose, your account number has been redacted to only show the last four digit: {redactded_account}")
 
 #This did not work as intended, printed on a new line each time 
 # print (account [1])
