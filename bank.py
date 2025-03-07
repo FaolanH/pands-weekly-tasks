@@ -7,7 +7,7 @@
 Amount1 = int(input ("Amount1(in cent)"))
 Amount2 = int(input ("Amount2(in cent)"))
 #Add the two amounts 
-Sum = Amount1 + Amount2
-print (f"€ {Sum} c")
+Sum = ((Amount1 + Amount2) / 100)
+print (f"The sum of these two amounts are €{Sum}c")
 #Print out the answer in a human readable format with a euro sign and 
 #decimal point between the euro and cent of the amount 
