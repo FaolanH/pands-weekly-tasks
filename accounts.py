@@ -19,6 +19,12 @@
 
 account = list(input("Please input your 10 digit account number: "))
 
+#if isinstance (account = float): 
+#    print ("Please only input whole, positive numbers")
+'''
+if isinstance (str == True):
+  print ("Please only input whole, positive numbers")
+'''
 account [0:6] = 'XXXXXX'
 
 
@@ -28,11 +34,18 @@ account [0:6] = 'XXXXXX'
 
 redactded_account = '' .join(account)
 
-if isinstance (account, float): 
+#this part is not working?
+'''
+
+
+
+if isinstance (account = int):
     print ("Please only input whole, positive numbers")
 
+'''
+
 #remembered len from lengths, got confirmation from stack overflow (https://stackoverflow.com/questions/8761778/limiting-python-input-strings-to-certain-characters-and-lengths)
-elif len(account) > 10 or len(account) < 10: 
+if len(account) > 10 or len(account) < 10: 
     print ("Please input your 10 account numbers")
 
 else:
