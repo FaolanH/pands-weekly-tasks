@@ -20,7 +20,7 @@ if day_of_week <4:
 
 #Well if it's a Friday, I think there should be a bit of celebration!
 elif day_of_week == 4:
-    print (f"Yay, finally it's {today.strftime('%A, %B %d')}, still a weekday but nearly the weekend!")
+    print (f"Yay, finally it's a {today.strftime('%A (%B %d)')}, still a weekday but nearly the weekend!")
     
 #for a weekend, it is a 5 or a 6, but this can be called else as there is no other option
 else:
