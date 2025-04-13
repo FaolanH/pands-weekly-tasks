@@ -16,15 +16,15 @@ day_of_week = today.weekday()
 
 #Which day of the week is the date? The days start from 0 (Monday) and go up to 3 (Thursday)
 if day_of_week <4:
-    print (f"Yes, unfortunately {today.strftime('%A, %B %d')} is a weekday")
+    print (f"Yes, unfortunately {today.strftime('%A (%B %d)')} is a weekday")
 
 #Well if it's a Friday, I think there should be a bit of celebration!
 elif day_of_week == 4:
-    print (f"Yay, finally it's a {today.strftime('%A (%B %d)')}, still a weekday but nearly the weekend!")
+    print (f"Yay, finally it's {today.strftime('%A (%B %d)')}, still a weekday but nearly the weekend!")
     
 #for a weekend, it is a 5 or a 6, but this can be called else as there is no other option
 else:
-    print (f"Today ({today.strftime('%A, %B %d')}) is the weekend, yay!")
+    print (f"Today is {today.strftime('%A (%B %d)')} aka. the weekend, yay!")
 
 #with a mixture of my DataCamp and AI to let me know which letter to use (A), we can see what day it is today
 #AI Question:
