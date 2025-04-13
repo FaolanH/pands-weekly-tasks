@@ -17,39 +17,52 @@
 
 #Python lists on Datacaamp
 
-account = list(input("Please input your 10 digit account number: "))
 
-#if isinstance (account = float): 
-#    print ("Please only input whole, positive numbers")
+#AI Question: how do I replace every digit except the last 4 in a list to 'X' in python?
+
+#AI Answer: numbers = ["1234567890", "9876543210", "5555555555"]
+#masked_numbers = ["X" * (len(num) - 4) + num[-4:] for num in numbers]
+#print(masked_numbers)
+
+#My output was giving me numbers
+#This is my input, I am getting a list with no x's back in my output: ser_input_account = list(input("Please input your 10 digit account number: ")) redacted = '' .join(user_input_account [0:-4]) redacted_account = ["X" * (len(r) - 4) + r[-4:] for r in redacted] print (f"For security purpose, your account number has been redacted to only show the last four digit: {redacted_account}")
+
+#Recommendation AI - user_input_account = input("Please input your 10-digit account number: ")
+
+#redacted_account = "X" * (len(user_input_account) - 4) + user_input_account[-4:]
+
+#print(f"For security purposes, your account number has been redacted: {redacted_account}")
+
+
+
+user_input_account = input("Please input your 10 digit account number: ")
+
+redacted_account = '' .join(["X" * (len(user_input_account) - 4) + user_input_account[-4:]])
+
+print (f"For security purpose, your account number has been redacted to only show the last four digit: {redacted_account}")
+
 '''
-if isinstance (str == True):
-  print ("Please only input whole, positive numbers")
-'''
-account [0:6] = 'XXXXXX'
 
-
+2345678
 #a mix of stack overflow which had converting strings to list led me to co-pilot for the reverse
 #my_list = ['apple', 'banana', 'cherry'] \n result = ', '.join(my_list) \nprint(result)  # Output: apple, banana, cherry
 
+if len(account) > 10 or len(account) < 10: 
+    print ("Please input your 10 account numbers")
 
-redactded_account = '' .join(account)
+#redactded_account = '' .join(account)
 
 #this part is not working?
-'''
-
-
 
 if isinstance (account = int):
     print ("Please only input whole, positive numbers")
-
-'''
 
 #remembered len from lengths, got confirmation from stack overflow (https://stackoverflow.com/questions/8761778/limiting-python-input-strings-to-certain-characters-and-lengths)
 if len(account) > 10 or len(account) < 10: 
     print ("Please input your 10 account numbers")
 
 else:
-    print (f"For security purpose, your account number has been redacted to only show the last four digit: {redactded_account}")
+    print (f"For security purpose, your account number has been redacted to only show the last four digit: {account}")
 
 #This did not work as intended, printed on a new line each time 
 # print (account [1])
@@ -63,3 +76,4 @@ else:
 # print (account [9])
 
 #For the extra part, this can already handle any number of digits as it is a list, the list range will need to be updated to redact more 
+'''
