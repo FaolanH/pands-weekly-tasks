@@ -22,16 +22,22 @@ print (loremfile)#.find("e"))
     
 #print (loremfile[0].find("e"))
 '''
-def loremfile(*e):
-    loremfile = open("loremipsum.txt","rt") as file:
-    f.read()
 
-    for letter in e:
-        loremfile += loremfile.find("e")
-    loremfile.close()
-    return loremfile
+# found a brilliant source for this: https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
 
-print (loremfile)
+def loremfile(file_name, letter):
+    
+    loremfile = open("loremipsum.txt","r")
+    text = loremfile.read()
+    
+    count = 0 
+
+    for char in text:
+        if char == letter:
+            count += 1
+    return count
+
+print (loremfile("loremipsum.txt", "e"))
 
 
 
