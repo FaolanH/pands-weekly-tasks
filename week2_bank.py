@@ -1,12 +1,17 @@
-#bank.py
-#Prompt the user and read in two money amounts (in cent),Add the two amounts and 
-#Print out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount 
-#Author: Faolán Hamilton
+# week2_bank.py
+# Week 2 Assignment: Print the sum of two amounts in euros and cents provided through user input
+# Author: Faolán Hamilton
 
-#Prompt the user and read in two money amounts (in cent)
-Amount1 = int(input ("Amount1(in cent)"))
-Amount2 = int(input ("Amount2(in cent)"))
-#Add the two amounts, and divide by 100 to get the amount in euros
-Sum = ((Amount1 + Amount2) / 100)
-#print the sum, formatted with the € and c and with a context sentence 
-print (f"The sum of these two amounts are €{Sum}c")
+# Prompt the user and read in two money amounts (in cents)
+# Read in both amounts separately so they can be added
+# The int before input ensures the input is a whole, positive number
+amount_1 = int(input ("Please enter the first amount (in cents): "))
+amount_2 = int(input ("Please enter the second amount (in cents): "))
+# Create a variable called sum, add the two amounts, and divide by 100 to get the amount in euros
+sum = ((amount_1 + amount_2) / 100)
+# Print the sum, formatted with the € and c and with a context sentence 
+print (f"The sum of the two amounts in euros and cents is €{sum}c")
+
+# References
+
+#----------End----------
