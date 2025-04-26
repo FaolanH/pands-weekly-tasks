@@ -10,3 +10,11 @@
 #### Week Six: Squareroot
 #### Week Seven: Textfile
 #### Week Eight: Plot
+
+#### Week One: Hello World
+##### This simple task was the first one given in the module, a common introduction phrase used when teaching coding. The intended output for this module is a simple "Hello, World" phrase in the terminal.
+
+
+
+### References
+Slack Overflow on Hello World: https://stackoverflow.com/questions/602237/where-does-hello-world-come-from
