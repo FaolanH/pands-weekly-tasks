@@ -1,36 +1,34 @@
-# accounts.py
-# read in a 10 (or more) character account number and output the account number with only the last 4 digits 
-# showing (and the previous digits replaced with Xs).
+# week3_accounts.py
+# Week 3 Assignment: Read in a user input account number, replacing all but the last 4 digits with Xs
 # Author: Faolán Hamilton
 
-#Please enter an 10 digit account number: 1234567890
-#XXXXXX7890
-#Extra: Modify the program to deal with account numbers of any length (yes that is a vague requirement, 
-#comment your assumptions)
+# Immediately lists came to mind for this, with the feature to replace positions in the list e.g. 
+# the first 6 numbers are replaced with X, did not figure out how to ensure the input is int only 
 
-#Immeditely lists came to mind for this, with the feature to replace positions in the list e.g. 
-#the first 6 numbers to be replaced with X
-#I HAVE STILL NOT FIGURED OUT HOW TO ENSURE LIST IS NUMBERS ONLY!
-#This slack overflow https://stackoverflow.com/questions/1277914/is-there-a-way-to-output-the-numbers-only-from-a-python-list
-#maybe use boolean?
-
-#---------------------------
-#Python lists on Datacaamp
-
+# Define the account number using user input
 account = list(input("Please input your 10 digit account number: "))
 
-account [0:6] = 'XXXXXX'
+# B - remembered len from lengths, got confirmation from stack overflow
+# # I had previously done this with an if loop statement instead of a while loop, and noticed 
+# that it restarts the whole run and does not allow user to try input again, so a while loop makes more sense
 
-#a mix of stack overflow which had converting strings to list led me to co-pilot for the reverse
-#my_list = ['apple', 'banana', 'cherry'] \n result = ', '.join(my_list) \nprint(result)  # Output: apple, banana, cherry
-
-redacted_account = '' .join(account)
-
-#remembered len from lengths, got confirmation from stack overflow (https://stackoverflow.com/questions/8761778/limiting-python-input-strings-to-certain-characters-and-lengths)
-if len(account) > 10 or len(account) < 10: 
+while len(account) > 10 or len(account) < 10: 
     print ("Please input your 10 account numbers")
+    account = list(input("Please input only your 10 digit account number: "))
 
 else:
-    print (f"For security purpose, your account number has been redacted to only show the last four digit: {redacted_account}")
+    account [0:6] = 'XXXXXX'
 
-#---------end-----------------
+# C - a mix of stack overflow which had converting strings to list led me to co-pilot for the reverse
+# example: my_list = ['apple', 'banana', 'cherry'] \n result = ', '.join(my_list) \nprint(result)  
+# Output: apple, banana, cherry
+
+    redacted_account = '' .join(account)
+    print (f"For security purposes, your account number has been redacted to only show the last four digits: {redacted_account}")
+
+# References
+# A - https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-2-python-lists?ex=10
+# B - len(https://stackoverflow.com/questions/8761778/limiting-python-input-strings-to-certain-characters-and-lengths)
+# C - https://stackoverflow.com/questions/35582959/how-do-i-convert-user-input-into-a-list
+
+#----------End----------#
