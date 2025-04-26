@@ -26,6 +26,33 @@ else:
     redacted_account = '' .join(account)
     print (f"For security purposes, your account number has been redacted to only show the last four digits: {redacted_account}")
 
+# If the account number was over 10 digits:
+# I asked the Co-Pilot about this, the structure was different to how I did the rest 
+# of the list, so I decided to go with my original way
+
+# AI Question: how do I replace every digit except the last 4 in a list to 'X' in python?
+
+# AI Answer: numbers = ["1234567890", "9876543210", "5555555555"]
+# masked_numbers = ["X" * (len(num) - 4) + num[-4:] for num in numbers]
+# print(masked_numbers)
+
+# My output was giving me numbers, so I needed to dig deeper
+# This is my input, I am getting a list with no x's back in my output: user_input_account = list(input("Please input your 10 digit account number: ")) redacted = '' .join(user_input_account [0:-4]) redacted_account = ["X" * (len(r) - 4) + r[-4:] for r in redacted] print (f"For security purpose, your account number has been redacted to only show the last four digit: {redacted_account}")
+
+# Recommendation AI - user_input_account = input("Please input your 10-digit account number: ")
+
+# redacted_account = "X" * (len(user_input_account) - 4) + user_input_account[-4:]
+
+# print(f"For security purposes, your account number has been redacted: {redacted_account}")
+
+'''
+user_input_account = input("Please input your 10 digit account number: ")
+
+redacted_account = '' .join(["X" * (len(user_input_account) - 4) + user_input_account[-4:]])
+
+print (f"For security purposes, your account number has been redacted to only show the last four digit: {redacted_account}")
+'''
+
 # References
 # A - https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-2-python-lists?ex=10
 # B - len(https://stackoverflow.com/questions/8761778/limiting-python-input-strings-to-certain-characters-and-lengths)
