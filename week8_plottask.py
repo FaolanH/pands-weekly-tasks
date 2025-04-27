@@ -1,5 +1,5 @@
 # week8_plottask.py
-# Week 8 Assignment: Create a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, and a plot of the function h(x)=x3 in the range 0 to 10. 
+# Week 8 Assignment: Create a histogram of a normal distribution of 1000 values with a mean of 5 and standard deviation of 2, and a plot of the function h(x)=x3 in the range 0 to 10. 
 # Author: Faolán Hamilton
 
 # I approached this task in separate sections:
@@ -49,10 +49,10 @@ plt.ylabel("h(x) = x3")
 plt.show()
 
 # References
-# A - setting mean, std dev, https://www.geeksforgeeks.org/how-to-plot-normal-distribution-over-histogram-in-python/
-# B - confirms the mean, std dev - numpy.random.Generator.normal - https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.normal.html
+# A - setting mean, std dev: https://www.geeksforgeeks.org/how-to-plot-normal-distribution-over-histogram-in-python/
+# B - confirms the mean, std dev - numpy.random.Generator.normal: https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.normal.html
 # C - AI text:
-#   My question: Hello, I am trying to plot a histogram on python using these values: Create a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, and a plot of the function h(x)=x3 in the range 0 to 10... I have figured out everything else except for h(x) = x3 - what does this mean?
+#   My question: Hello, I am trying to plot a histogram on python using these values: Create a histogram of a normal distribution of 1000 values with a mean of 5 and standard deviation of 2, and a plot of the function h(x)=x3 in the range 0 to 10... I have figured out everything else except for h(x) = x3 - what does this mean?
 #   Answer: No problem! The function h ( x ) = x 3 h(x)=x 3 means that for any value of x x, the function h ( x ) h(x) will return x x raised to the power of 3. In other words, it's a cubic function. Here's a breakdown: If x = 1 x=1, then h ( 1 ) = 1 3 = 1 h(1)=1 3 =1. If x = 2 x=2, then h ( 2 ) = 2 3 = 8 h(2)=2 3 =8. If x = 3 x=3, then h ( 3 ) = 3 3 = 27 h(3)=3 3 =27. So, for any x x in the range from 0 to 10, you calculate x 3 x 3 to get the corresponding h ( x ) h(x) value. Would you like to see how this function looks when plotted?
 #   Follow-up question: So, is h(x) =x3 the x or y axis?
 #   Follow-up answer: n the plot, h ( x ) = x 3 h(x)=x 3 represents the y-axis values. Here's how it works: The x-axis values are the input values ranging from 0 to 10. The y-axis values are the output of the function h ( x ) = x 3 h(x)=x 3 for each corresponding x value. So, for each point on the x-axis, you calculate x 3 x 3 to get the corresponding y value. For example, if x = 2 x=2, then h ( 2 ) = 2 3 = 8 h(2)=2 3 =8, so the point (2, 8) would be on the plot. If you have any more questions or need further clarification, feel free to ask!
@@ -88,6 +88,6 @@ plt.legend()
 # Show the plot
 plt.show()
 '''
-# D - Intermediate Python - Chapter 1: Matplotlib - https://app.datacamp.com/learn/courses/intermediate-python
+# D - Intermediate Python - Chapter 1: Matplotlib: https://app.datacamp.com/learn/courses/intermediate-python
 
 #----------End----------#
