@@ -2,7 +2,7 @@
 # Week 5 Assignment: Output what day of the week it is
 # Author: Faolán Hamilton
 
-# I learned how to do this through Datacamp, 'Working with Dates and Time in Python'
+# I learned how to do this through DataCamp, 'Working with Dates and Time in Python'
 
 # Import date from datetime
 import datetime 
