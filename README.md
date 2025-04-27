@@ -1,5 +1,5 @@
 # pands-weekly-tasks
-
+## Created by Faolán Hamilton
 
 ## This repository is for the Programming and Scripting module in the Data Analytics Higher Diploma course. Worth 50% of the module, there were eight weekly tasks given to complete by Monday the 28th of April 2025 using Python (through VSCode in my case). 
 
