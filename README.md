@@ -11,7 +11,18 @@
 ----------
 ### Week Two: Bank
 
+#### This task required the user to input two amounts (in cents) and output the sum of the two amounts in cents. 
+
 ----------
+### Week Three: Accounts
+
+#### This task required the user to input their 10 digit account number, but have the first six digits censored with Xs for security purposes in the output.
+
+----------
+### Week Four: Collatz
+
+#### This task follows the mathematical sequence, which changes depending on whether the number input is odd or even. The output will show the numbers it takes to end in one following the sequence.
+
 ### Week Eight
 Output: 
 
