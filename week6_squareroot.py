@@ -3,7 +3,7 @@
 # Author: Faolán Hamilton
 
 # Initially, I had started with just the user input piece as a float, then went to define the square root
-# as a function. I commited my start then when I realised I did not know how to move on! 
+# as a function. I committed my start then when I realised I did not know how to move on! 
 # I found several articles on the topic and an AI answer that I wasn't happy with, then came across a 
 # Stack overflow article on it which made much more sense to me. 
 
@@ -26,7 +26,7 @@ def newton(x, estimate):
         estimate = (estimate + (x/estimate)) / 2.0
     return estimate
 # Read in user input, which is a float
-estimate = float(input("Please enter a postive number: "))
+estimate = float(input("Please enter a positive number: "))
 
 print (f"The square root of {estimate} is approx. {newton(estimate,1):.4f}") # I also wanted to ensure the answer was only 4 decimal places instead of having 16 decimal place
 
@@ -43,7 +43,7 @@ def newton(x, estimate):
  estimate = (estimate + (x/estimate)) / 2.0
  return estimate
 # Read in user input
-estimate = float(estimate("Please enter a postive number: "))
+estimate = float(estimate("Please enter a positive number: "))
 
 print (f"The square root of {estimate} is approx. {newton(estimate,1)}")
 
@@ -83,7 +83,7 @@ The user inputs a number, and the program calculates and prints its approximate 
 Feel free to ask if you have any questions or need further clarification!
 '''
 #C - W3 Schools, Absolute Value: https://www.w3schools.com/python/ref_func_abs.asp
-#D - Netwon Raphson Method: https://www.geeksforgeeks.org/newton-raphson-method/
+#D - Newton Raphson Method: https://www.geeksforgeeks.org/newton-raphson-method/
 #E - Aziz Alto: https://stackoverflow.com/questions/1995615/how-can-i-format-a-decimal-to-always-show-2-decimal-places
 
 #----------End----------#
