@@ -27,8 +27,7 @@ else:
     print (f"For security purposes, your account number has been redacted to only show the last four digits: {redacted_account}")
 
 # If the account number was over 10 digits:
-# I asked the Co-Pilot about this, the structure was different to how I did the rest 
-# of the list, so I decided to go with my original way
+# I asked the Co-Pilot about this, but the structure was different to how I did the rest, so I decided to go with my original way
 
 # AI Question: how do I replace every digit except the last 4 in a list to 'X' in python?
 
@@ -54,8 +53,9 @@ print (f"For security purposes, your account number has been redacted to only sh
 '''
 
 # References
-# A - https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-2-python-lists?ex=10
-# B - len(https://stackoverflow.com/questions/8761778/limiting-python-input-strings-to-certain-characters-and-lengths)
-# C - https://stackoverflow.com/questions/35582959/how-do-i-convert-user-input-into-a-list
+
+# A - Python Lists: https://campus.datacamp.com/courses/intro-to-python-for-data-science/chapter-2-python-lists?ex=10
+# B - len: (https://stackoverflow.com/questions/8761778/limiting-python-input-strings-to-certain-characters-and-lengths)
+# C - User input List: https://stackoverflow.com/questions/35582959/how-do-i-convert-user-input-into-a-list
 
 #----------End----------#
