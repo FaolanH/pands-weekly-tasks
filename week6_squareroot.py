@@ -53,7 +53,6 @@ if __name__ == "__main__" :
 
 
 print (f"The square root of {n} is approx. {square_root(n, l)}")
-'''
 
 #---------------------AI----------------------------
 def sqrt_newton_raphson(s, tolerance=1e-10):
@@ -70,3 +69,15 @@ print (f"The square root of {s} is approx. {sqrt_newton_raphson(s)}")
 
 
 #Both have a similar answer, but the AI's formula is shorter.
+
+'''
+
+def check(x, guess):
+    return (abs(guess*guess - x) < 0.001)
+
+def newton(x, guess):
+    while not check(x, guess):
+        guess = (guess + (x/guess)) / 2.0
+    return guess
+
+print (newton(16, 1))
