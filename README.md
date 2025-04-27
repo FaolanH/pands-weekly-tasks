@@ -57,16 +57,24 @@
 #### The square root of 45.0 is approx. 6.7082
 
 ----------
-#### Week Seven: 
+### Week Seven: Textfile
+#### This task reads in a txt. file and outputs the number of 'e' within the file.
 
-### Week Eight
-Output: 
+#### Output:
+#### There are 290 'e' in the loremipsum txt. file.
+
+----------
+### Week Eight: Plottask
+#### The final weekly task imports matplotlib.pyplot to visualise data with a normal distribution (as seen in the output below)
+
+#### Output: 
 
 ![alt text](Week8_Plottask_output_FaolánHamilton.png)
 
 ----------
 
-### References
+### References for README
+
 Slack Overflow on Hello World: https://stackoverflow.com/questions/602237/where-does-hello-world-come-from
 
 # ----------End---------- #
