@@ -6,7 +6,7 @@
 ----------
 ### Week One: Hello World
 
-#### This simple task was the first one given in the module, a common introduction phrase used when teaching coding. The phrase is then printed in the terminal
+#### This simple task was the first one given in the module; a common introduction phrase used when teaching coding. The phrase is then printed in the terminal
 
 #### Output:
 #### "Hello, World!"
@@ -24,7 +24,7 @@
 ----------
 ### Week Three: Accounts
 
-#### This task required the user to input their 10 digit account number, but have the first six digits censored with Xs for security purposes in the output.
+#### This task required the user to input their 10 digit account number with the first six digits censored with Xs for security purposes in the output.
 
 #### Example Output:
 #### Please input your 10 digit account number: 1234567890
