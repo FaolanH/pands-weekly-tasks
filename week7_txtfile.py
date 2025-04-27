@@ -17,7 +17,7 @@ def loremfile(file_name, letter):
     # char represents character
     for char in text:
         if char == letter:
-            # This adds 1 everytime an e is found
+            # This adds 1 every time an e is found
             count += 1
     return count
 
@@ -26,7 +26,7 @@ print (loremfile("week7_loremipsum.txt", "e"))
 # References
 
 # A - Reading in a file: https://campus.datacamp.com/courses/introduction-to-importing-data-in-python/introduction-and-flat-files-1?ex=2
-# B - https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
-# C - dummy text source - https://www.lipsum.com/feed/html
+# B - Main source for finding how many time a letter appears: https://www.geeksforgeeks.org/count-the-number-of-times-a-letter-appears-in-a-text-file-in-python/
+# C - dummy text source: https://www.lipsum.com/feed/html
 
 #----------End----------#
