@@ -20,6 +20,7 @@
 #### Please enter the first amount (in cents): 123
 #### Please enter the second amount (in cents): 654
 #### The sum of the two amounts in euros and cents is €7.77c
+
 ----------
 ### Week Three: Accounts
 
@@ -28,17 +29,35 @@
 #### Example Output:
 #### Please input your 10 digit account number: 1234567890
 #### For security purposes, your account number has been redacted to only show the last four digits: XXXXXX7890
+
 ----------
 ### Week Four: Collatz
 
 #### This task follows the mathematical sequence, which changes depending on whether the number input is odd or even. The output will show the numbers it takes to end in one following the sequence.
 
+#### Example Output:
+#### Please enter a positive integer (whole number) greater than 1: 12
+#### 6 3 10 5 16 8 4 2 1 
+
 ----------
 ### Week Five: Weekday
 #### This task outputs the day of the week, by reading in what day of the week it is. Each day type (Midweek, Friday or the weekend) has a different message associated
 
+#### Example Output:
+#### Yes, unfortunately Wednesday (April 23) is a weekday
+#### Yay, finally it's Friday (April 25), still a weekday but nearly the weekend!
+#### Today is Sunday (April 27) aka. the weekend, yay!
+
 ----------
-### Week Six: Weekday
+### Week Six: Squareroot
+#### This task takes in a positive number, and outputs the approximate square root using the 
+
+#### Example Output:
+#### Please enter a positive number: 45
+#### The square root of 45.0 is approx. 6.7082
+
+----------
+#### Week Seven: 
 
 ### Week Eight
 Output: 
