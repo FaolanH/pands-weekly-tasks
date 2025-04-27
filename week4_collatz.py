@@ -3,7 +3,7 @@
 # Author: Faolán Hamilton 
 
 # Initially, all I had was a while loop for even and odd numbers, as well as the user input. 
-# A stackoverview forum (listed as 'A' in references below) built on this method to output the desired collatz 
+# A Stack Overview forum (listed as 'A' in references below) built on this method to output the desired collatz 
 # I tweaked it in a way that made sense to me, using the initial post to be refined and the last answer 
 # not including the 'seen', 'set()', 'try' and 'ValueError' and using only what I understood
 
