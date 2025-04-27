@@ -13,7 +13,6 @@ account = list(input("Please input your 10 digit account number: "))
 # that it restarts the whole run and does not allow user to try input again, so a while loop makes more sense
 
 while len(account) > 10 or len(account) < 10: 
-    print ("Please input your 10 account numbers")
     account = list(input("Please input only your 10 digit account number: "))
 
 else:
