@@ -21,7 +21,7 @@ def loremfile(file_name, letter):
             count += 1
     return count
 
-print (loremfile("week7_loremipsum.txt", "e"))
+print (f"There are {loremfile("week7_loremipsum.txt", "e")} 'e' in the loremipsum txt. file.")
 
 # References
 
